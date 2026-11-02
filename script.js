@@ -16,8 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             searchMessage.textContent = visibleSongs === 0 ? "No songs found. Try another search." : visibleSongs + " song(s) found.";
         });
     }
-
-    // Live character counter
+   // Live character counter
     document.querySelectorAll("[data-char-count]").forEach(function (field) {
         field.addEventListener("input", function () {
             const countId = field.id === "feedbackMessage" ? "feedbackCount" : "requestCount";
