@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Listen. | Request a Song</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="header"><a href="index.html" class="logo">Listen<span>.</span></a><nav class="nav">
+<a href="index.html">Home</a><a href="library.html">Library</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="request.html" class="active">Request a Song</a><a href="login.html">Login</a>
+</nav></header>
+<main class="form-page"><section class="form-container card">
+<p class="eyebrow">YOUR MUSIC, YOUR CHOICE</p><h1>Request a <span style="color:#b5ff3d">song.</span></h1>
+<p class="form-intro">Can't find your favourite track? Tell us what you want to hear.</p>
+<form id="requestForm" data-json-form data-form-type="song-request">
+<div class="form-field"><label for="requestName">Your name</label><input id="requestName" name="name" type="text" placeholder="Enter your name" required minlength="2"></div>
+<div class="form-field"><label for="requestEmail">Email address</label><input id="requestEmail" name="email" type="email" placeholder="Enter your email" required></div>
+<div class="form-field"><label for="songTitle">Song name</label><input id="songTitle" name="songTitle" type="text" placeholder="Enter song name" required></div>
+<div class="form-field"><label for="songArtist">Artist name</label><input id="songArtist" name="artist" type="text" placeholder="Enter artist name" required></div>
+<div class="form-field"><label for="requestReason">Why do you want this song? (optional)</label><textarea id="requestReason" name="reason" placeholder="Tell us a little about it..." maxlength="300" data-char-count></textarea><p class="char-count" id="requestCount">0 / 300 characters</p></div>
+<button class="form-submit" type="submit">Submit Song Request</button><p class="form-message" id="requestStatus" aria-live="polite"></p>
+</form></section></main>
+<footer class="footer"><div class="footer-logo">Listen<span>.</span></div><p>© 2026 Listen. • Music Player Project</p></footer>
+<script src="script.js"></script></body></html>
