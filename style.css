@@ -258,3 +258,27 @@ audio { width: 100%; height: 40px; }
     .about-grid { grid-template-columns: 1fr; }
     .login-box { padding: 30px 24px; }
 }
+
+
+/* Evaluation 2: forms and JavaScript interactions */
+.nav { flex-wrap: wrap; justify-content: flex-end; }
+.search-area { max-width: 620px; margin: 0 0 28px; }
+.search-area label, .form-field label { display: block; margin-bottom: 9px; color: #ccc; font-size: 13px; }
+.search-area input, .form-field input, .form-field textarea, .form-field select {
+    width: 100%; padding: 14px; background: #080808; color: #fff;
+    border: 1px solid #292929; border-radius: 5px; outline: none; font: inherit;
+}
+.search-area input:focus, .form-field input:focus, .form-field textarea:focus, .form-field select:focus { border-color: #b5ff3d; }
+.form-page { min-height: calc(100vh - 156px); padding: 65px 7% 90px; }
+.form-container { max-width: 680px; margin: 0 auto; padding: 36px; }
+.form-container h1 { margin: 12px 0; font-size: clamp(38px, 6vw, 58px); letter-spacing: -2px; }
+.form-intro { margin-bottom: 28px; color: #888; line-height: 1.7; }
+.form-field { margin: 20px 0; }
+.form-field textarea { min-height: 125px; resize: vertical; }
+.form-submit { width: 100%; min-height: 48px; margin-top: 12px; border: 0; border-radius: 5px; background: #b5ff3d; color: #050505; font-weight: 700; cursor: pointer; }
+.form-submit:hover { transform: translateY(-2px); }
+.form-message { min-height: 20px; margin-top: 12px; color: #b5ff3d; font-size: 13px; line-height: 1.5; }
+.form-message.error { color: #ff7777; }
+.char-count { margin-top: 7px; color: #666; font-size: 11px; text-align: right; }
+.no-results { color: #888; padding: 20px 0; }
+@media (max-width: 800px) { .nav { justify-content: center; gap: 12px 18px; } .form-page { padding: 45px 6%; } .form-container { padding: 26px 20px; } }
