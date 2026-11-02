@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Listen. | Contact</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="header"><a href="index.html" class="logo">Listen<span>.</span></a><nav class="nav">
+<a href="index.html">Home</a><a href="library.html">Library</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a><a href="request.html">Request a Song</a><a href="login.html">Login</a>
+</nav></header>
+<main class="form-page"><section class="form-container card">
+<p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p><h1>Contact <span style="color:#b5ff3d">us.</span></h1>
+<p class="form-intro">Have feedback or a suggestion? Send us a message.</p>
+<form id="feedbackForm" data-json-form data-form-type="feedback">
+<div class="form-field"><label for="feedbackName">Your name</label><input id="feedbackName" name="name" type="text" placeholder="Enter your name" required minlength="2"></div>
+<div class="form-field"><label for="feedbackEmail">Email address</label><input id="feedbackEmail" name="email" type="email" placeholder="Enter your email" required></div>
+<div class="form-field"><label for="feedbackSubject">Subject</label><input id="feedbackSubject" name="subject" type="text" placeholder="What is this about?" required></div>
+<div class="form-field"><label for="feedbackMessage">Message</label><textarea id="feedbackMessage" name="message" placeholder="Write your message..." required minlength="10" maxlength="500" data-char-count></textarea><p class="char-count" id="feedbackCount">0 / 500 characters</p></div>
+<button class="form-submit" type="submit">Send Message</button><p class="form-message" id="feedbackStatus" aria-live="polite"></p>
+</form></section></main>
+<footer class="footer"><div class="footer-logo">Listen<span>.</span></div><p>© 2026 Listen. • Music Player Project</p></footer>
+<script src="script.js"></script></body></html>
